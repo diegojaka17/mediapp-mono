@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Mi Perfil</mat-card-title>
+      <mat-card-subtitle>{{userName}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-icon>icon</mat-icon>
+    <h3>Mis Roles</h3>
+    <br>
+    <mat-card-content *ngFor="let rol of roles">
+      <p>
+        {{rol}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-fab color="accent" (click)="volver()">Volver</button>
+    </mat-card-actions>
+  </mat-card>
